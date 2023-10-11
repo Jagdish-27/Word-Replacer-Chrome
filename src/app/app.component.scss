@@ -1,0 +1,125 @@
+@import '../styles.scss';
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: $color-Dark-gray-blue;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 5rem;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.form_input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  text-align: left;
+
+  label {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  input,
+  textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    transition: border-color 0.3s;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    &::placeholder {
+      color: #ccc7c7;
+    }
+    &:focus {
+      border-color: $color-orangey-yellow;
+    }
+  }
+
+  textarea {
+    min-height: 150px;
+    resize: vertical;
+    font-size: 16px;
+
+    &::placeholder{
+        font-size: 1.1rem;
+    }
+  }
+
+  .btn_box {
+    display: flex;
+    justify-content: space-between;
+
+    button {
+      padding: 12px 24px;
+      font-size: 1em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: hsl(204.66deg 94.31% 51.07%);
+      color: #fff;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken(hsl(204.66deg 94.31% 51.07%), 10%);
+      }
+    }
+  }
+
+  .result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+
+    input {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+      margin-right: 10px;
+      width: 100%;
+      background-color: #fff;
+      color: #000;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 1em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: hsl(204.66deg 94.31% 51.07%);
+      color: #fff;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: darken(hsl(204.66deg 94.31% 51.07%), 10%);
+      }
+    }
+  }
+}
+
+.result {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+

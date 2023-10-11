@@ -1,0 +1,20 @@
+{
+    "manifest_version":3,
+
+    "name": "Word-Replacer-Chrome",
+
+    "description": "Word replacing app!!",
+
+    "version": "1.0.0",
+
+    "action": {
+        "default_popup":"index.html"
+    },
+
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*",
+        "*://*/*"    
+    ]
+
+}
